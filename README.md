@@ -11,3 +11,5 @@ We build Thai natural language processing.
 - Wannaphong Phatthiyaphaibun <wannaphong@kkumail.com>
 - Korakot Chaovavanich
 - Charin Polpanumas
+- Peeradej Tanruangporn
+- Arthit Suriyawongkul
