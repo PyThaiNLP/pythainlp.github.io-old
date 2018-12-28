@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pythainlp.tag &mdash; PyThaiNLP 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pythainlp.tokenize" href="tokenize.html" />
+    <link rel="prev" title="pythainlp.summarize" href="summarize.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PyThaiNLP
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../notes/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/installation.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Package reference:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="corpus.html">pythainlp.corpus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="soundex.html">pythainlp.soundex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spell.html">pythainlp.spell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summarize.html">pythainlp.summarize</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">pythainlp.tag</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#modules">Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tokenize.html">pythainlp.tokenize</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transliterate.html">pythainlp.transliterate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ulmfit.html">pythainlp.ulmfit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="util.html">pythainlp.util</a></li>
+<li class="toctree-l1"><a class="reference internal" href="word_vector.html">pythainlp.word_vector</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PyThaiNLP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>pythainlp.tag</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/tag.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pythainlp-tag">
+<h1>pythainlp.tag<a class="headerlink" href="#pythainlp-tag" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">pythainlp.tag</span></code> contains functions that are used to tag different parts of a text.</p>
+<div class="section" id="modules">
+<h2>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="pythainlp.tag.pos_tag">
+<code class="descclassname">pythainlp.tag.</code><code class="descname">pos_tag</code><span class="sig-paren">(</span><em>words</em>, <em>engine='unigram'</em>, <em>corpus='orchid'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pythainlp/tag.html#pos_tag"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pythainlp.tag.pos_tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Part of Speech tagging function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>words</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – a list of tokenized words</li>
+<li><strong>engine</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – <ul>
+<li>unigram - unigram tagger (default)</li>
+<li>perceptron - perceptron tagger</li>
+<li>artagger - RDR POS tagger</li>
+</ul>
+</li>
+<li><strong>corpus</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – <ul>
+<li>orchid - annotated Thai academic articles</li>
+<li>pud - Parallel Universal Dependencies (PUD) treebanks</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">returns a list of labels regarding which part of speech it is</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pythainlp.tag.pos_tag_sents">
+<code class="descclassname">pythainlp.tag.</code><code class="descname">pos_tag_sents</code><span class="sig-paren">(</span><em>sentences</em>, <em>engine='unigram'</em>, <em>corpus='orchid'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pythainlp/tag.html#pos_tag_sents"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pythainlp.tag.pos_tag_sents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Part of Speech tagging Sentence function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sentences</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – a list of tokenized sentences (a list of tokenized words in sentences)</li>
+<li><strong>engine</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – <ul>
+<li>unigram - unigram tagger (default)</li>
+<li>perceptron - perceptron tagger</li>
+<li>artagger - RDR POS tagger</li>
+</ul>
+</li>
+<li><strong>corpus</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – <ul>
+<li>orchid - annotated Thai academic articles</li>
+<li>pud - Parallel Universal Dependencies (PUD) treebanks</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">returns a list of labels regarding which part of speech it is</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pythainlp.tag.tag_provinces">
+<code class="descclassname">pythainlp.tag.</code><code class="descname">tag_provinces</code><span class="sig-paren">(</span><em>tokens</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pythainlp/tag/locations.html#tag_provinces"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pythainlp.tag.tag_provinces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recognize Thailand provinces in text</p>
+<p>Input is a list of words
+Return a list of tuples</p>
+<p>Example:
+&gt;&gt;&gt; text = [‘หนองคาย’, ‘น่าอยู่’]
+&gt;&gt;&gt; tag_provinces(text)
+[(‘หนองคาย’, ‘B-LOCATION’), (‘น่าอยู่’, ‘O’)]</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pythainlp.tag.ThaiNameTagger">
+<em class="property">class </em><code class="descclassname">pythainlp.tag.</code><code class="descname">ThaiNameTagger</code><a class="reference internal" href="../_modules/pythainlp/tag/named_entity.html#ThaiNameTagger"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pythainlp.tag.ThaiNameTagger" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pythainlp.tag.ThaiNameTagger.get_ner">
+<code class="descname">get_ner</code><span class="sig-paren">(</span><em>text</em>, <em>pos=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pythainlp/tag/named_entity.html#ThaiNameTagger.get_ner"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pythainlp.tag.ThaiNameTagger.get_ner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get named-entities in text</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>text</strong> (<em>string</em>) – Thai text</li>
+<li><strong>pos</strong> (<em>boolean</em>) – get Part-Of-Speech tag (True) or get not (False)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">list of strings with name labels (and part-of-speech tags)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt><strong>Example</strong>::</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pythainlp.tag</span> <span class="k">import</span> <span class="n">ThaiNameTagger</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ner</span> <span class="o">=</span> <span class="n">ThaiNameTagger</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ner</span><span class="o">.</span><span class="n">get_ner</span><span class="p">(</span><span class="s2">&quot;วันที่ 15 ก.ย. 61 ทดสอบระบบเวลา 14:49 น.&quot;</span><span class="p">)</span>
+<span class="go">[(&#39;วันที่&#39;, &#39;JSBR&#39;, &#39;O&#39;), (&#39; &#39;, &#39;NCMN&#39;, &#39;O&#39;), (&#39;15&#39;, &#39;NCNM&#39;, &#39;B-DATE&#39;),</span>
+<span class="go">(&#39; &#39;, &#39;NCMN&#39;, &#39;I-DATE&#39;), (&#39;ก.ย.&#39;, &#39;CMTR&#39;, &#39;I-DATE&#39;), (&#39; &#39;, &#39;NCMN&#39;, &#39;I-DATE&#39;),</span>
+<span class="go">(&#39;61&#39;, &#39;NCNM&#39;, &#39;I-DATE&#39;), (&#39; &#39;, &#39;NCMN&#39;, &#39;O&#39;), (&#39;ทดสอบ&#39;, &#39;VACT&#39;, &#39;O&#39;),</span>
+<span class="go">(&#39;ระบบ&#39;, &#39;NCMN&#39;, &#39;O&#39;), (&#39;เวลา&#39;, &#39;NCMN&#39;, &#39;O&#39;), (&#39; &#39;, &#39;NCMN&#39;, &#39;O&#39;),</span>
+<span class="go">(&#39;14&#39;, &#39;NCNM&#39;, &#39;B-TIME&#39;), (&#39;:&#39;, &#39;PUNC&#39;, &#39;I-TIME&#39;), (&#39;49&#39;, &#39;NCNM&#39;, &#39;I-TIME&#39;),</span>
+<span class="go">(&#39; &#39;, &#39;NCMN&#39;, &#39;I-TIME&#39;), (&#39;น.&#39;, &#39;CMTR&#39;, &#39;I-TIME&#39;)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ner</span><span class="o">.</span><span class="n">get_ner</span><span class="p">(</span><span class="s2">&quot;วันที่ 15 ก.ย. 61 ทดสอบระบบเวลา 14:49 น.&quot;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">[(&#39;วันที่&#39;, &#39;O&#39;), (&#39; &#39;, &#39;O&#39;), (&#39;15&#39;, &#39;B-DATE&#39;), (&#39; &#39;, &#39;I-DATE&#39;),</span>
+<span class="go">(&#39;ก.ย.&#39;, &#39;I-DATE&#39;), (&#39; &#39;, &#39;I-DATE&#39;), (&#39;61&#39;, &#39;I-DATE&#39;), (&#39; &#39;, &#39;O&#39;),</span>
+<span class="go">(&#39;ทดสอบ&#39;, &#39;O&#39;), (&#39;ระบบ&#39;, &#39;O&#39;), (&#39;เวลา&#39;, &#39;O&#39;), (&#39; &#39;, &#39;O&#39;), (&#39;14&#39;, &#39;B-TIME&#39;),</span>
+<span class="go">(&#39;:&#39;, &#39;I-TIME&#39;), (&#39;49&#39;, &#39;I-TIME&#39;), (&#39; &#39;, &#39;I-TIME&#39;), (&#39;น.&#39;, &#39;I-TIME&#39;)]</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tokenize.html" class="btn btn-neutral float-right" title="pythainlp.tokenize" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="summarize.html" class="btn btn-neutral" title="pythainlp.summarize" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017-2018, PyThaiNLP (Apache Software License 2.0)
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
